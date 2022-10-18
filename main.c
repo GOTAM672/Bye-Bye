@@ -13,6 +13,19 @@ activate (GtkApplication* app,
   gtk_window_set_resizable (GTK_WINDOW (window), false);
   //gtk_window_set_position (GTK_WINDOW (window), GTK_WIN_POS_CENTER_ALWAYS);
   //gtk_window_set_decorated (GTK_WINDOW (window), false);
+  
+
+  GtkWidget *cancel;
+  GtkWidget *hibernate;
+  GtkWidget *lock;
+  GtkWidget *logout;
+  GtkWidget *reboot;
+  GtkWidget *shutdown;
+  GtkWidget *suspend;
+
+
+
+
   gtk_widget_show (window);
 }
 
