@@ -35,10 +35,37 @@ activate (GtkApplication* app,
   shutdown = gtk_image_new_from_file ("/home/Bye-Bye/img/shutdown.png");
   suspend = gtk_image_new_from_file ("/home/Bye-Bye/img/suspend.png");
 
-
-  GtkWidget *label;
-  label = gtk_label_new ("Cancel");
-  gtk_label_set_markup (GTK_LABEL (<b>Cancel</b>));
+  
+  //  Gtk Labels
+  
+  
+  GtkWidget *label_cancel;
+  label_cancel = gtk_label_new ("Cancel");
+  gtk_label_set_markup (GTK_LABEL (label), "<b>Cancel</b>");
+  
+  GtkWidget *label_hibernate;
+  label_hibernate = gtk_label_new ("Hibernate");
+  gtk_label_set_markup (GTK_LABEL (label_hibernate), "<b>Hibernate</b>");
+  
+  GtkWidget *label_lock;
+  label_lock = gtk_label_new ("Lock");
+  gtk_label_set_markup (GTK_LABEL (label_lock), "<b>Lock</b>");
+  
+  GtkWidget *label_logout;
+  label_logout = gtk_label_new ("Logout");
+  gtk_label_set_markup (GTK_LABEL (label_logout), "<b>Logout</b>");
+  
+  GtkWidget *label_reboot;
+  label_reboot = gtk_label_new ("Reboot");
+  gtk_label_set_markup (GTK_LABEL (label_reboot), "<b>Reboot</b>");
+  
+  GtkWidget *label_shutdown;
+  label_shutdown = gtk_label_new ("Shutdown");
+  gtk_label_set_markup (GTK_LABEL (label_shutdown), "<b>Shutdown</b>");
+  
+  GtkWidget *label_suspend;
+  label_suspend = gtk_label_new ("Suspend");
+  gtk_label_set_markup (GTK_LABEL (label_suspend), "<b>Suspend</b>");
 
 
 
