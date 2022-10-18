@@ -1,5 +1,6 @@
 #include <gtk/gtk.h>
-//enum GtkWindowPosition;
+//#include <glib/glib.h>
+
 
 static void
 activate (GtkApplication* app,
@@ -22,6 +23,37 @@ activate (GtkApplication* app,
   GtkWidget *reboot;
   GtkWidget *shutdown;
   GtkWidget *suspend;
+
+  //const gchar *homedir;
+  //homedir = g_get_home_dir();
+
+  cancel = gtk_image_new_from_file ("/home/Bye-Bye/img/cancel.png");
+  hibernate = gtk_image_new_from_file ("/home/Bye-Bye/img/hibernate.png");
+  lock = gtk_image_new_from_file ("/home/Bye-Bye/img/lock.png");
+  logout = gtk_image_new_from_file ("/home/Bye-Bye/img/logout.png");
+  reboot = gtk_image_new_from_file ("/home/Bye-Bye/img/reboot.png");
+  shutdown = gtk_image_new_from_file ("/home/Bye-Bye/img/shutdown.png");
+  suspend = gtk_image_new_from_file ("/home/Bye-Bye/img/suspend.png");
+
+
+  GtkWidget *label;
+  label = gtk_label_new ("Cancel");
+  gtk_label_set_markup (GTK_LABEL (<b>Cancel</b>));
+
+
+
+  GtkWidget *grid;
+  grid = gtk_grid_new ();
+
+  gtk_grid_set_column_spacing (GTK_GRID (grid), 10);
+  gtk_grid_set_roe_spacing (GTK_GRID (grid), 10);
+  gtk_grid_column_homogenous (GTK_GRID (grid), true);
+
+
+
+
+
+  
 
 
 
