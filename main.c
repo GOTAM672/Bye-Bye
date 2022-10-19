@@ -6,6 +6,7 @@ static void
 activate (GtkApplication* app,
           gpointer        user_data)
 {
+
   GtkWidget *window;
 
   window = gtk_application_window_new (app);
@@ -13,8 +14,10 @@ activate (GtkApplication* app,
   gtk_window_set_default_size (GTK_WINDOW (window), 750, 225);
   gtk_window_set_resizable (GTK_WINDOW (window), false);
   //gtk_window_set_position (GTK_WINDOW (window), GTK_WIN_POS_CENTER_ALWAYS);
-  //gtk_window_set_decorated (GTK_WINDOW (window), false);
+  gtk_window_set_decorated (GTK_WINDOW (window), false);
   
+
+  // Buttons
 
   GtkWidget *cancel;
   GtkWidget *hibernate;
@@ -38,10 +41,9 @@ activate (GtkApplication* app,
   
   //  Gtk Labels
   
-  
   GtkWidget *label_cancel;
   label_cancel = gtk_label_new ("Cancel");
-  gtk_label_set_markup (GTK_LABEL (label), "<b>Cancel</b>");
+  gtk_label_set_markup (GTK_LABEL (label_cancel), "<b>Cancel</b>");
   
   GtkWidget *label_hibernate;
   label_hibernate = gtk_label_new ("Hibernate");
@@ -68,7 +70,7 @@ activate (GtkApplication* app,
   gtk_label_set_markup (GTK_LABEL (label_suspend), "<b>Suspend</b>");
 
 
-
+/*
   GtkWidget *grid;
   grid = gtk_grid_new ();
 
@@ -78,7 +80,7 @@ activate (GtkApplication* app,
 
 
 
-
+*/
 
   
 
