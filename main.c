@@ -1,5 +1,19 @@
 #include <gtk/gtk.h>
-//#include <glib/glib.h>
+
+void 
+cancel_button_clicked (GtkWidget* widget, 
+		       gpointer   user_data)
+{
+
+
+	g_print("Button clicked");
+
+
+
+}
+
+
+
 
 
 static void
@@ -70,17 +84,23 @@ activate (GtkApplication* app,
   gtk_label_set_markup (GTK_LABEL (label_suspend), "<b>Suspend</b>");
 
 
-/*
+
   GtkWidget *grid;
   grid = gtk_grid_new ();
 
   gtk_grid_set_column_spacing (GTK_GRID (grid), 10);
-  gtk_grid_set_roe_spacing (GTK_GRID (grid), 10);
-  gtk_grid_column_homogenous (GTK_GRID (grid), true);
+  gtk_grid_set_row_spacing (GTK_GRID (grid), 10);
+  gtk_grid_set_column_homogeneous (GTK_GRID (grid), true);
 
 
 
-*/
+  GtkWidget *cancel_button;
+  cancel_button = gtk_button_new ();
+  //gtk_button_set_relief (GTK_BUTTON (cancel_button), GTK_RELIEF_NONE);
+  gtk_button_set_image (GTK_BUTTON (cancel_button), cancel);
+  gtk_widget_set_hexpand (GTK_BUTTON (cancel_button), false);
+  g_signal_connect (GTK_BUTTON (cancel_button), "clicked", G_CALLBACK(cancel_button_clicked), NULL);
+
 
   
 
