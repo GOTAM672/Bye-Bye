@@ -4,16 +4,8 @@ void
 cancel_button_clicked (GtkWidget* widget, 
 		       gpointer   user_data)
 {
-
-
 	g_print("Button clicked");
-
-
-
 }
-
-
-
 
 
 static void
@@ -103,10 +95,6 @@ activate (GtkApplication* app,
 
 
   
-
-
-
-
   gtk_widget_show (window);
 }
 
