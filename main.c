@@ -36,13 +36,13 @@ activate (GtkApplication* app,
   //const gchar *homedir;
   //homedir = g_get_home_dir();
 
-  cancel = gtk_image_new_from_file ("/home/Bye-Bye/img/cancel.png");
-  hibernate = gtk_image_new_from_file ("/home/Bye-Bye/img/hibernate.png");
-  lock = gtk_image_new_from_file ("/home/Bye-Bye/img/lock.png");
-  logout = gtk_image_new_from_file ("/home/Bye-Bye/img/logout.png");
-  reboot = gtk_image_new_from_file ("/home/Bye-Bye/img/reboot.png");
-  shutdown = gtk_image_new_from_file ("/home/Bye-Bye/img/shutdown.png");
-  suspend = gtk_image_new_from_file ("/home/Bye-Bye/img/suspend.png");
+  cancel = gtk_image_new_from_file (".img/cancel.png");
+  hibernate = gtk_image_new_from_file ("./img/hibernate.png");
+  lock = gtk_image_new_from_file ("./img/lock.png");
+  logout = gtk_image_new_from_file ("./img/logout.png");
+  reboot = gtk_image_new_from_file ("./img/reboot.png");
+  shutdown = gtk_image_new_from_file ("./img/shutdown.png");
+  suspend = gtk_image_new_from_file ("./img/suspend.png");
 
   
   //  Gtk Labels
