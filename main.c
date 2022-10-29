@@ -1,10 +1,13 @@
 #include <gtk/gtk.h>
 
 void 
-cancel_button_clicked (GtkWidget* widget, 
+cancel_button_clicked (GtkWidget* win, 
 		       gpointer   user_data)
 {
-	g_print("Button clicked");
+        //GtkWidget *win = GTK_WINDOW (user_data);
+	g_print("Cancel Button Clicked");
+        gtk_window_destroy (win);
+
 }
 
 
@@ -93,7 +96,7 @@ activate (GtkApplication* app,
   //gtk_button_set_relief (GTK_BUTTON (cancel_button), GTK_RELIEF_STYLE_NONE);
   gtk_widget_set_hexpand (GTK_BUTTON (cancel_button), false);
   //gtk_button_set_image (GTK_BUTTON (cancel_button), cancel);
-  //g_signal_connect (GTK_BUTTON (cancel_button), "clicked", G_CALLBACK(cancel_button_clicked), NULL);
+  g_signal_connect (GTK_WINDOW (window), "clicked", G_CALLBACK(cancel_button_clicked), NULL);
   
 
 
