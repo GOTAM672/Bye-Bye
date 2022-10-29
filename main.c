@@ -24,6 +24,7 @@ activate (GtkApplication* app,
   
 
   // Buttons
+/*
 
   GtkWidget *cancel;
   GtkWidget *hibernate;
@@ -36,7 +37,7 @@ activate (GtkApplication* app,
   //const gchar *homedir;
   //homedir = g_get_home_dir();
 
-  cancel = gtk_image_new_from_file (".img/cancel.png");
+  cancel = gtk_image_new_from_file ("./img/cancel.png");
   hibernate = gtk_image_new_from_file ("./img/hibernate.png");
   lock = gtk_image_new_from_file ("./img/lock.png");
   logout = gtk_image_new_from_file ("./img/logout.png");
@@ -44,7 +45,8 @@ activate (GtkApplication* app,
   shutdown = gtk_image_new_from_file ("./img/shutdown.png");
   suspend = gtk_image_new_from_file ("./img/suspend.png");
 
-  
+ */
+
   //  Gtk Labels
   
   GtkWidget *label_cancel;
@@ -88,15 +90,20 @@ activate (GtkApplication* app,
 
   GtkWidget *cancel_button;
   cancel_button = gtk_button_new ();
-  //gtk_button_set_relief (GTK_BUTTON (cancel_button), GTK_RELIEF_NONE);
-  gtk_button_set_image (GTK_BUTTON (cancel_button), cancel);
+  //gtk_button_set_relief (GTK_BUTTON (cancel_button), GTK_RELIEF_STYLE_NONE);
   gtk_widget_set_hexpand (GTK_BUTTON (cancel_button), false);
-  g_signal_connect (GTK_BUTTON (cancel_button), "clicked", G_CALLBACK(cancel_button_clicked), NULL);
+  //gtk_button_set_image (GTK_BUTTON (cancel_button), cancel);
+  //g_signal_connect (GTK_BUTTON (cancel_button), "clicked", G_CALLBACK(cancel_button_clicked), NULL);
+  
+
+
 
 
   
   gtk_widget_show (window);
 }
+
+
 
 int
 main (int    argc,
