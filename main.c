@@ -83,7 +83,7 @@ activate (GtkApplication* app,
 
 
 
-
+  // cancel button
   GtkWidget *cancel_button;
   cancel_button = gtk_button_new ();
   //gtk_button_set_relief (GTK_BUTTON (cancel_button), GTK_RELIEF_STYLE_NONE);
@@ -91,7 +91,67 @@ activate (GtkApplication* app,
   //gtk_button_set_image (GTK_BUTTON (cancel_button), cancel);
   g_signal_connect (cancel_button, "clicked", G_CALLBACK(cancel_button_clicked), window);
   
+  
+  // hibernate button
+  GtkWidget *hibernate_button;
+  hibernate_button = gtk_button_new ();
+  //gtk_button_set_relief (GTK_BUTTON (cancel_button), GTK_RELIEF_STYLE_NONE);
+  gtk_widget_set_hexpand (GTK_BUTTON (hibernate_button), false);
+  //gtk_button_set_image (GTK_BUTTON (cancel_button), cancel);
+  g_signal_connect (hibernate_button, "clicked", G_CALLBACK(hibernate_button_clicked), window);
+  
+  
+  // lock button
+  GtkWidget *lock_button;
+  lock_button = gtk_button_new ();
+  //gtk_button_set_relief (GTK_BUTTON (cancel_button), GTK_RELIEF_STYLE_NONE);
+  gtk_widget_set_hexpand (GTK_BUTTON (lock_button), false);
+  //gtk_button_set_image (GTK_BUTTON (cancel_button), cancel);
+  g_signal_connect (lock_button, "clicked", G_CALLBACK(lock_button_clicked), window);
+  
+  
+  // logout button
+  GtkWidget *logout_button;
+  logout_button = gtk_button_new ();
+  //gtk_button_set_relief (GTK_BUTTON (cancel_button), GTK_RELIEF_STYLE_NONE);
+  gtk_widget_set_hexpand (GTK_BUTTON (logout_button), false);
+  //gtk_button_set_image (GTK_BUTTON (cancel_button), cancel);
+  g_signal_connect (logout_button, "clicked", G_CALLBACK(logout_button_clicked), window);
+  
+  
+  // reboot button
+  GtkWidget *reboot_button;
+  reboot_button = gtk_button_new ();
+  //gtk_button_set_relief (GTK_BUTTON (cancel_button), GTK_RELIEF_STYLE_NONE);
+  gtk_widget_set_hexpand (GTK_BUTTON (reboot_button), false);
+  //gtk_button_set_image (GTK_BUTTON (cancel_button), cancel);
+  g_signal_connect (reboot_button, "clicked", G_CALLBACK(reboot_button_clicked), window);
+  
+  
+  // shutdown button
+  GtkWidget *shutdown_button;
+  shutdown_button = gtk_button_new ();
+  //gtk_button_set_relief (GTK_BUTTON (cancel_button), GTK_RELIEF_STYLE_NONE);
+  gtk_widget_set_hexpand (GTK_BUTTON (shutdown_button), false);
+  //gtk_button_set_image (GTK_BUTTON (cancel_button), cancel);
+  g_signal_connect (shutdown_button, "clicked", G_CALLBACK(shutdown_button_clicked), window);
+  
+  
+  // suspend button
+  GtkWidget *suspend_button;
+  suspend_button = gtk_button_new ();
+  //gtk_button_set_relief (GTK_BUTTON (cancel_button), GTK_RELIEF_STYLE_NONE);
+  gtk_widget_set_hexpand (GTK_BUTTON (suspend_button), false);
+  //gtk_button_set_image (GTK_BUTTON (cancel_button), cancel);
+  g_signal_connect (suspend_button, "clicked", G_CALLBACK(suspend_button_clicked), window);
+  
 
+  
+  
+  
+  
+  
+  
 
   GtkWidget *grid;
   grid = gtk_grid_new ();
@@ -100,8 +160,11 @@ activate (GtkApplication* app,
   gtk_grid_set_row_spacing (GTK_GRID (grid), 10);
   gtk_grid_set_column_homogeneous (GTK_GRID (grid), true);
 
+  
   gtk_grid_attach (GTK_GRID (grid), cancel_button, 0, 0, 1, 1);
-
+  gtk_grid_attach (GTK_GRID (grid), label_cancel, 0, 1, 1, 1);
+  
+  
   /* Pack the container in the window */
   gtk_window_set_child (GTK_WINDOW (window), grid);
 
