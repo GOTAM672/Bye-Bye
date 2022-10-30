@@ -1,11 +1,11 @@
 #include <gtk/gtk.h>
 
 void 
-cancel_button_clicked (GtkWidget* win, 
+cancel_button_clicked (GtkWidget* button,
 		       gpointer   user_data)
 {
-        //GtkWidget *win = GTK_WINDOW (user_data);
-	g_print("Cancel Button Clicked");
+        GtkWidget *win= GTK_WINDOW (user_data);
+	g_print("Cancel Button Clicked\n");
         gtk_window_destroy (win);
 
 }
@@ -82,13 +82,6 @@ activate (GtkApplication* app,
 
 
 
-  GtkWidget *grid;
-  grid = gtk_grid_new ();
-
-  gtk_grid_set_column_spacing (GTK_GRID (grid), 10);
-  gtk_grid_set_row_spacing (GTK_GRID (grid), 10);
-  gtk_grid_set_column_homogeneous (GTK_GRID (grid), true);
-
 
 
   GtkWidget *cancel_button;
@@ -96,9 +89,21 @@ activate (GtkApplication* app,
   //gtk_button_set_relief (GTK_BUTTON (cancel_button), GTK_RELIEF_STYLE_NONE);
   gtk_widget_set_hexpand (GTK_BUTTON (cancel_button), false);
   //gtk_button_set_image (GTK_BUTTON (cancel_button), cancel);
-  g_signal_connect (GTK_WINDOW (window), "clicked", G_CALLBACK(cancel_button_clicked), NULL);
+  g_signal_connect (cancel_button, "clicked", G_CALLBACK(cancel_button_clicked), window);
   
 
+
+  GtkWidget *grid;
+  grid = gtk_grid_new ();
+
+  gtk_grid_set_column_spacing (GTK_GRID (grid), 10);
+  gtk_grid_set_row_spacing (GTK_GRID (grid), 10);
+  gtk_grid_set_column_homogeneous (GTK_GRID (grid), true);
+
+  gtk_grid_attach (GTK_GRID (grid), cancel_button, 0, 0, 1, 1);
+
+  /* Pack the container in the window */
+  gtk_window_set_child (GTK_WINDOW (window), grid);
 
 
 
