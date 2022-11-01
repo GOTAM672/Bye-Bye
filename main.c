@@ -11,37 +11,13 @@ activate (GtkApplication* app,
 
   window = gtk_application_window_new (app);
   gtk_window_set_title (GTK_WINDOW (window), "ByeBye");
-  gtk_window_set_default_size (GTK_WINDOW (window), 750, 80);
-  gtk_window_set_resizable (GTK_WINDOW (window), true);
-  //gtk_window_set_position (GTK_WINDOW (window), GTK_WIN_POS_CENTER_ALWAYS);
+  gtk_window_set_default_size (GTK_WINDOW (window), 600, 80);
+  gtk_window_set_resizable (GTK_WINDOW (window), false);
   gtk_window_set_decorated (GTK_WINDOW (window), true);
-  
-
-  // Buttons
-
-
-  GtkWidget *cancel;
-  GtkWidget *hibernate;
-  GtkWidget *lock;
-  GtkWidget *logout;
-  GtkWidget *reboot;
-  GtkWidget *shutdown;
-  GtkWidget *suspend;
-
-  //const gchar *homedir;
-  //homedir = g_get_home_dir();
-
-  cancel = gtk_image_new_from_file ("/home/gotam/Bye-Bye/img/cancel.png");
-  hibernate = gtk_image_new_from_file ("./img/hibernate.png");
-  lock = gtk_image_new_from_file ("./img/lock.png");
-  logout = gtk_image_new_from_file ("./img/logout.png");
-  reboot = gtk_image_new_from_file ("./img/reboot.png");
-  shutdown = gtk_image_new_from_file ("./img/shutdown.png");
-  suspend = gtk_image_new_from_file ("./img/suspend.png");
 
 
 
-  //  Gtk Labels
+  //  Gtk Labels for buttons
   
   GtkWidget *label_cancel;
   label_cancel = gtk_label_new ("Cancel");
@@ -79,7 +55,6 @@ activate (GtkApplication* app,
   cancel_button = gtk_button_new_with_label("CANCEL");
   //gtk_button_set_relief (GTK_BUTTON (cancel_button), GTK_RELIEF_STYLE_NONE);
   gtk_widget_set_hexpand (GTK_BUTTON (cancel_button), false);
-  //gtk_button_set_image (GTK_BUTTON (cancel_button), lock);
   g_signal_connect (cancel_button, "clicked", G_CALLBACK(cancel_button_clicked), window);
   
   
@@ -182,6 +157,7 @@ activate (GtkApplication* app,
   
   gtk_widget_show (window);
 }
+
 
 
 
