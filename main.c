@@ -69,7 +69,7 @@ activate (GtkApplication* app,
   
   // lock button
   GtkWidget *lock_button;
-  lock_button = gtk_button_new_with_label("LOAD");
+  lock_button = gtk_button_new_with_label("LOCK");
   //gtk_button_set_relief (GTK_BUTTON (cancel_button), GTK_RELIEF_STYLE_NONE);
   gtk_widget_set_hexpand (GTK_BUTTON (lock_button), false);
   //gtk_button_set_image (GTK_BUTTON (cancel_button), cancel);
