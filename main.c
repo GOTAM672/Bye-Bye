@@ -60,7 +60,7 @@ activate (GtkApplication* app,
   
   // hibernate button
   GtkWidget *hibernate_button;
-  hibernate_button = gtk_button_new ();
+  hibernate_button = gtk_button_new_with_label("HIBERNATE");
   //gtk_button_set_relief (GTK_BUTTON (cancel_button), GTK_RELIEF_STYLE_NONE);
   gtk_widget_set_hexpand (GTK_BUTTON (hibernate_button), false);
   //gtk_button_set_image (GTK_BUTTON (cancel_button), cancel);
@@ -69,7 +69,7 @@ activate (GtkApplication* app,
   
   // lock button
   GtkWidget *lock_button;
-  lock_button = gtk_button_new ();
+  lock_button = gtk_button_new_with_label("LOAD");
   //gtk_button_set_relief (GTK_BUTTON (cancel_button), GTK_RELIEF_STYLE_NONE);
   gtk_widget_set_hexpand (GTK_BUTTON (lock_button), false);
   //gtk_button_set_image (GTK_BUTTON (cancel_button), cancel);
@@ -78,7 +78,7 @@ activate (GtkApplication* app,
   
   // logout button
   GtkWidget *logout_button;
-  logout_button = gtk_button_new ();
+  logout_button = gtk_button_new_with_label("LOGOUT");
   //gtk_button_set_relief (GTK_BUTTON (cancel_button), GTK_RELIEF_STYLE_NONE);
   gtk_widget_set_hexpand (GTK_BUTTON (logout_button), false);
   //gtk_button_set_image (GTK_BUTTON (cancel_button), cancel);
@@ -87,7 +87,7 @@ activate (GtkApplication* app,
   
   // reboot button
   GtkWidget *reboot_button;
-  reboot_button = gtk_button_new ();
+  reboot_button = gtk_button_new_with_label("REBOOT");
   //gtk_button_set_relief (GTK_BUTTON (cancel_button), GTK_RELIEF_STYLE_NONE);
   gtk_widget_set_hexpand (GTK_BUTTON (reboot_button), false);
   //gtk_button_set_image (GTK_BUTTON (cancel_button), cancel);
@@ -96,7 +96,7 @@ activate (GtkApplication* app,
   
   // shutdown button
   GtkWidget *shutdown_button;
-  shutdown_button = gtk_button_new ();
+  shutdown_button = gtk_button_new_with_label("SHUTDOWN");
   //gtk_button_set_relief (GTK_BUTTON (cancel_button), GTK_RELIEF_STYLE_NONE);
   gtk_widget_set_hexpand (GTK_BUTTON (shutdown_button), false);
   //gtk_button_set_image (GTK_BUTTON (cancel_button), cancel);
@@ -105,7 +105,7 @@ activate (GtkApplication* app,
   
   // suspend button
   GtkWidget *suspend_button;
-  suspend_button = gtk_button_new ();
+  suspend_button = gtk_button_new_with_label("SUSPEND");
   //gtk_button_set_relief (GTK_BUTTON (cancel_button), GTK_RELIEF_STYLE_NONE);
   gtk_widget_set_hexpand (GTK_BUTTON (suspend_button), false);
   //gtk_button_set_image (GTK_BUTTON (cancel_button), cancel);
