@@ -1,0 +1,6 @@
+data/org.gnome.ByeBye.desktop.in
+data/org.gnome.ByeBye.appdata.xml.in
+data/org.gnome.ByeBye.gschema.xml
+src/main.c
+src/bye-bye-window.c
+src/bye-bye-window.ui
