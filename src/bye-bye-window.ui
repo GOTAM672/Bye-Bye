@@ -20,6 +20,55 @@
             </child>
           </object>
         </child>
+        <child>
+          <object class="GtkGrid">
+            <property name="column-spacing">10</property>
+            <property name="row-spacing">10</property>
+            <property name="column-homogeneous">true</property>
+            <!-- Cancel Button -->
+            <child>
+              <object class="GtkButton" id="cancel_button">
+                <property name="label">Cancel</property>
+              </object>
+            </child>
+            <!-- Reboot Button -->
+            <child>
+              <object class="GtkButton" id="reboot_button">
+                <property name="label">Reboot</property>
+              </object>
+            </child>
+            <!-- Logout Button -->
+            <child>
+              <object class="GtkButton" id="logout_button">
+                <property name="label">Logout</property>
+              </object>
+            </child>
+            <!-- Shutdown Button -->
+            <child>
+              <object class="GtkButton" id="shutdown_button">
+                <property name="label">Shutdown</property>
+              </object>
+            </child>
+            <!-- Suspend Button -->
+            <child>
+              <object class="GtkButton" id="suspend_button">
+                <property name="label">Suspend</property>
+              </object>
+            </child>
+            <!-- Hibernate Button -->
+            <child>
+              <object class="GtkButton" id="hibernate_button">
+                <property name="label">Hibernate</property>
+              </object>
+            </child>
+            <!-- Lock Button -->
+            <child>
+              <object class="GtkButton" id="Lock_button">
+                <property name="label">Lock</property>
+              </object>
+            </child>
+          </object>
+        </child>
       </object>
     </child>
   </template>
