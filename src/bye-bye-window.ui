@@ -6,7 +6,7 @@
     <property name="default-width">750</property>
     <property name="default-height">225</property>
     <property name="resizable">false</property>
-    <property name="title"></property>
+    <property name="title">Bye Bye</property>
     <child>
       <object class="GtkBox">
         <property name="orientation">vertical</property>
@@ -25,88 +25,223 @@
             <property name="column-spacing">10</property>
             <property name="row-spacing">10</property>
             <property name="column-homogeneous">true</property>
+
+            <!-- Cancel Label -->
+            <child>
+              <object class="GtkLabel">
+                <property name="use-markup">true</property>
+                <property name="label">Cancel</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="row">12</property>
+                </layout>
+              </object>
+            </child>
+
+            <!-- Reboot Label -->
+            <child>
+              <object class="GtkLabel">
+                <property name="use-markup">true</property>
+                <property name="label">Reboot</property>
+                <layout>
+                  <property name="column">1</property>
+                  <property name="row">12</property>
+                </layout>
+              </object>
+            </child>
+
+            <!-- Logout Label -->
+            <child>
+              <object class="GtkLabel">
+                <property name="use-markup">true</property>
+                <property name="label">Logout</property>
+                <layout>
+                  <property name="column">2</property>
+                  <property name="row">12</property>
+                </layout>
+              </object>
+            </child>
+
+            <!-- Shutdown Label -->
+            <child>
+              <object class="GtkLabel">
+                <property name="use-markup">true</property>
+                <property name="label">Shutdown</property>
+                <layout>
+                  <property name="column">3</property>
+                  <property name="row">12</property>
+                </layout>
+              </object>
+            </child>
+
+            <!-- Suspend Label -->
+            <child>
+              <object class="GtkLabel">
+                <property name="use-markup">true</property>
+                <property name="label">Suspend</property>
+                <layout>
+                  <property name="column">4</property>
+                  <property name="row">12</property>
+                </layout>
+              </object>
+            </child>
+
+            <!-- Hibernate Label -->
+            <child>
+              <object class="GtkLabel">
+                <property name="use-markup">true</property>
+                <property name="label">Hibernate</property>
+                <layout>
+                  <property name="column">5</property>
+                  <property name="row">12</property>
+                </layout>
+              </object>
+            </child>
+
+            <!-- Lock Label -->
+            <child>
+              <object class="GtkLabel">
+                <property name="use-markup">true</property>
+                <property name="label">Lock</property>
+                <layout>
+                  <property name="column">6</property>
+                  <property name="row">12</property>
+                </layout>
+              </object>
+            </child>
+
+            <!-- Buttons....... -->
+
             <!-- Cancel Button -->
             <child>
               <object class="GtkButton" id="cancel_button">
                 <property name="label">Cancel</property>
+                <property name="margin-top">33</property>
                 <property name="tooltip-text">Cancel Button</property>
                 <child>
                   <object class="GtkImage">
                     <property name="file">/home/gotamg/Projects/bye-bye/img/cancel.png</property>
                   </object>
                 </child>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="row">0</property>
+                  <property name="row-span">12</property>
+                </layout>
               </object>
             </child>
+
             <!-- Reboot Button -->
             <child>
               <object class="GtkButton" id="reboot_button">
                 <property name="label">Reboot</property>
+                <property name="margin-top">33</property>
                 <property name="tooltip-text">Reboot Button</property>
                 <child>
                   <object class="GtkImage">
                     <property name="file">/home/gotamg/Projects/bye-bye/img/reboot.png</property>
                   </object>
                 </child>
+                <layout>
+                  <property name="column">1</property>
+                  <property name="row">0</property>
+                  <property name="row-span">12</property>
+                </layout>
               </object>
             </child>
+
             <!-- Logout Button -->
             <child>
               <object class="GtkButton" id="logout_button">
                 <property name="label">Logout</property>
+                <property name="margin-top">33</property>
                 <property name="tooltip-text">Logout Button</property>
                 <child>
                   <object class="GtkImage">
                     <property name="file">/home/gotamg/Projects/bye-bye/img/logout.png</property>
                   </object>
                 </child>
+                <layout>
+                  <property name="column">2</property>
+                  <property name="row">0</property>
+                  <property name="row-span">12</property>
+                </layout>
               </object>
             </child>
+
             <!-- Shutdown Button -->
             <child>
               <object class="GtkButton" id="shutdown_button">
                 <property name="label">Shutdown</property>
+                <property name="margin-top">33</property>
                 <property name="tooltip-text">Shutdown Button</property>
                 <child>
                   <object class="GtkImage">
                     <property name="file">/home/gotamg/Projects/bye-bye/img/shutdown.png</property>
                   </object>
                 </child>
+                <layout>
+                  <property name="column">3</property>
+                  <property name="row">0</property>
+                  <property name="row-span">12</property>
+                </layout>
               </object>
             </child>
+
             <!-- Suspend Button -->
             <child>
               <object class="GtkButton" id="suspend_button">
                 <property name="label">Suspend</property>
+                <property name="margin-top">33</property>
                 <property name="tooltip-text">Suspend Button</property>
                 <child>
                   <object class="GtkImage">
                     <property name="file">/home/gotamg/Projects/bye-bye/img/suspend.png</property>
                   </object>
                 </child>
+                <layout>
+                  <property name="column">4</property>
+                  <property name="row">0</property>
+                  <property name="row-span">12</property>
+                </layout>
               </object>
             </child>
+
             <!-- Hibernate Button -->
             <child>
               <object class="GtkButton" id="hibernate_button">
                 <property name="label">Hibernate</property>
+                <property name="margin-top">33</property>
                 <property name="tooltip-text">Hibernate Button</property>
                 <child>
                   <object class="GtkImage">
                     <property name="file">/home/gotamg/Projects/bye-bye/img/hibernate.png</property>
                   </object>
                 </child>
+                <layout>
+                  <property name="column">5</property>
+                  <property name="row">0</property>
+                  <property name="row-span">12</property>
+                </layout>
               </object>
             </child>
+
             <!-- Lock Button -->
             <child>
               <object class="GtkButton" id="Lock_button">
                 <property name="label">Lock</property>
+                <property name="margin-top">33</property>
                 <property name="tooltip-text">Lock Button</property>
                 <child>
                   <object class="GtkImage">
                     <property name="file">/home/gotamg/Projects/bye-bye/img/lock.png</property>
                   </object>
                 </child>
+                <layout>
+                  <property name="column">6</property>
+                  <property name="row">0</property>
+                  <property name="row-span">12</property>
+                </layout>
               </object>
             </child>
           </object>

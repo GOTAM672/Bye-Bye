@@ -36,6 +36,8 @@ struct _ByeByeWindow
         GtkButton           *suspend_button;
         GtkButton           *hibernate_button;
         GtkButton           *lock_button;
+
+        GtkGrid             *grid;
 };
 
 G_DEFINE_FINAL_TYPE (ByeByeWindow, bye_bye_window, ADW_TYPE_APPLICATION_WINDOW)
@@ -55,10 +57,12 @@ bye_bye_window_class_init (ByeByeWindowClass *klass)
         gtk_widget_class_bind_template_child (widget_class, ByeByeWindow, suspend_button);
         gtk_widget_class_bind_template_child (widget_class, ByeByeWindow, hibernate_button);
         gtk_widget_class_bind_template_child (widget_class, ByeByeWindow, lock_button);
+        gtk_widget_class_bind_template_child (widget_class, ByeByeWindow, grid);
 }
 
 static void
 bye_bye_window_init (ByeByeWindow *self)
 {
 	gtk_widget_init_template (GTK_WIDGET (self));
+
 }
