@@ -29,6 +29,13 @@ struct _ByeByeWindow
 	/* Template widgets */
 	GtkHeaderBar        *header_bar;
 	GtkLabel            *label;
+        GtkButton           *cancel_button;
+        GtkButton           *reboot_button;
+        GtkButton           *logout_button;
+        GtkButton           *shutdown_button;
+        GtkButton           *suspend_button;
+        GtkButton           *hibernate_button;
+        GtkButton           *lock_button;
 };
 
 G_DEFINE_FINAL_TYPE (ByeByeWindow, bye_bye_window, ADW_TYPE_APPLICATION_WINDOW)
@@ -41,6 +48,13 @@ bye_bye_window_class_init (ByeByeWindowClass *klass)
 	gtk_widget_class_set_template_from_resource (widget_class, "/org/gnome/ByeBye/bye-bye-window.ui");
 	gtk_widget_class_bind_template_child (widget_class, ByeByeWindow, header_bar);
 	gtk_widget_class_bind_template_child (widget_class, ByeByeWindow, label);
+        gtk_widget_class_bind_template_child (widget_class, ByeByeWindow, cancel_button);
+        gtk_widget_class_bind_template_child (widget_class, ByeByeWindow, reboot_button);
+        gtk_widget_class_bind_template_child (widget_class, ByeByeWindow, logout_button);
+        gtk_widget_class_bind_template_child (widget_class, ByeByeWindow, shutdown_button);
+        gtk_widget_class_bind_template_child (widget_class, ByeByeWindow, suspend_button);
+        gtk_widget_class_bind_template_child (widget_class, ByeByeWindow, hibernate_button);
+        gtk_widget_class_bind_template_child (widget_class, ByeByeWindow, lock_button);
 }
 
 static void
