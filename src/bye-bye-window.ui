@@ -29,42 +29,77 @@
             <child>
               <object class="GtkButton" id="cancel_button">
                 <property name="label">Cancel</property>
+                <child>
+                  <object class="GtkImage">
+                    <property name="file">/home/gotamg/Projects/bye-bye/img/cancel.png</property>
+                  </object>
+                </child>
               </object>
             </child>
             <!-- Reboot Button -->
             <child>
               <object class="GtkButton" id="reboot_button">
                 <property name="label">Reboot</property>
+                <child>
+                  <object class="GtkImage">
+                    <property name="file">/home/gotamg/Projects/bye-bye/img/reboot.png</property>
+                  </object>
+                </child>
               </object>
             </child>
             <!-- Logout Button -->
             <child>
               <object class="GtkButton" id="logout_button">
                 <property name="label">Logout</property>
+                <child>
+                  <object class="GtkImage">
+                    <property name="file">/home/gotamg/Projects/bye-bye/img/logout.png</property>
+                  </object>
+                </child>
               </object>
             </child>
             <!-- Shutdown Button -->
             <child>
               <object class="GtkButton" id="shutdown_button">
                 <property name="label">Shutdown</property>
+                <child>
+                  <object class="GtkImage">
+                    <property name="file">/home/gotamg/Projects/bye-bye/img/shutdown.png</property>
+                  </object>
+                </child>
               </object>
             </child>
             <!-- Suspend Button -->
             <child>
               <object class="GtkButton" id="suspend_button">
                 <property name="label">Suspend</property>
+                <child>
+                  <object class="GtkImage">
+                    <property name="file">/home/gotamg/Projects/bye-bye/img/suspend.png</property>
+                  </object>
+                </child>
               </object>
             </child>
             <!-- Hibernate Button -->
             <child>
               <object class="GtkButton" id="hibernate_button">
                 <property name="label">Hibernate</property>
+                <child>
+                  <object class="GtkImage">
+                    <property name="file">/home/gotamg/Projects/bye-bye/img/hibernate.png</property>
+                  </object>
+                </child>
               </object>
             </child>
             <!-- Lock Button -->
             <child>
               <object class="GtkButton" id="Lock_button">
                 <property name="label">Lock</property>
+                <child>
+                  <object class="GtkImage">
+                    <property name="file">/home/gotamg/Projects/bye-bye/img/lock.png</property>
+                  </object>
+                </child>
               </object>
             </child>
           </object>
