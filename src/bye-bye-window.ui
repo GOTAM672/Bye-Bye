@@ -29,6 +29,7 @@
             <child>
               <object class="GtkButton" id="cancel_button">
                 <property name="label">Cancel</property>
+                <property name="tooltip-text">Cancel Button</property>
                 <child>
                   <object class="GtkImage">
                     <property name="file">/home/gotamg/Projects/bye-bye/img/cancel.png</property>
@@ -40,6 +41,7 @@
             <child>
               <object class="GtkButton" id="reboot_button">
                 <property name="label">Reboot</property>
+                <property name="tooltip-text">Reboot Button</property>
                 <child>
                   <object class="GtkImage">
                     <property name="file">/home/gotamg/Projects/bye-bye/img/reboot.png</property>
@@ -51,6 +53,7 @@
             <child>
               <object class="GtkButton" id="logout_button">
                 <property name="label">Logout</property>
+                <property name="tooltip-text">Logout Button</property>
                 <child>
                   <object class="GtkImage">
                     <property name="file">/home/gotamg/Projects/bye-bye/img/logout.png</property>
@@ -62,6 +65,7 @@
             <child>
               <object class="GtkButton" id="shutdown_button">
                 <property name="label">Shutdown</property>
+                <property name="tooltip-text">Shutdown Button</property>
                 <child>
                   <object class="GtkImage">
                     <property name="file">/home/gotamg/Projects/bye-bye/img/shutdown.png</property>
@@ -73,6 +77,7 @@
             <child>
               <object class="GtkButton" id="suspend_button">
                 <property name="label">Suspend</property>
+                <property name="tooltip-text">Suspend Button</property>
                 <child>
                   <object class="GtkImage">
                     <property name="file">/home/gotamg/Projects/bye-bye/img/suspend.png</property>
@@ -84,6 +89,7 @@
             <child>
               <object class="GtkButton" id="hibernate_button">
                 <property name="label">Hibernate</property>
+                <property name="tooltip-text">Hibernate Button</property>
                 <child>
                   <object class="GtkImage">
                     <property name="file">/home/gotamg/Projects/bye-bye/img/hibernate.png</property>
@@ -95,6 +101,7 @@
             <child>
               <object class="GtkButton" id="Lock_button">
                 <property name="label">Lock</property>
+                <property name="tooltip-text">Lock Button</property>
                 <child>
                   <object class="GtkImage">
                     <property name="file">/home/gotamg/Projects/bye-bye/img/lock.png</property>
