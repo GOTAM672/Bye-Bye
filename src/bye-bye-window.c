@@ -28,7 +28,7 @@ struct _ByeByeWindow
 
 	/* Template widgets */
 	GtkHeaderBar        *header_bar;
-	GtkLabel            *label;
+	//GtkLabel            *label;
         GtkButton           *cancel_button;
         GtkButton           *reboot_button;
         GtkButton           *logout_button;
@@ -37,10 +37,51 @@ struct _ByeByeWindow
         GtkButton           *hibernate_button;
         GtkButton           *lock_button;
 
-        GtkGrid             *grid;
 };
 
 G_DEFINE_FINAL_TYPE (ByeByeWindow, bye_bye_window, ADW_TYPE_APPLICATION_WINDOW)
+
+static void
+bye_bye_window_cancel_clicked (ByeByeWindow *self)
+{
+  g_print ("Cancel button clicked .");
+}
+
+static void
+bye_bye_window_reboot_clicked (ByeByeWindow *self)
+{
+  g_print ("Reboot button clicked .");
+}
+
+static void
+bye_bye_window_logout_clicked (ByeByeWindow *self)
+{
+  g_print ("Logout button clicked .");
+}
+
+static void
+bye_bye_window_shutdown_clicked (ByeByeWindow *self)
+{
+  g_print ("Shutdown button clicked .");
+}
+
+static void
+bye_bye_window_suspend_clicked (ByeByeWindow *self)
+{
+  g_print ("Suspend button clicked .");
+}
+
+static void
+bye_bye_window_hibernate_clicked (ByeByeWindow *self)
+{
+  g_print ("Hibernate button clicked .");
+}
+
+static void
+bye_bye_window_lock_clicked (ByeByeWindow *self)
+{
+  g_print ("Lock button clicked!");
+}
 
 static void
 bye_bye_window_class_init (ByeByeWindowClass *klass)
@@ -49,7 +90,7 @@ bye_bye_window_class_init (ByeByeWindowClass *klass)
 
 	gtk_widget_class_set_template_from_resource (widget_class, "/org/gnome/ByeBye/bye-bye-window.ui");
 	gtk_widget_class_bind_template_child (widget_class, ByeByeWindow, header_bar);
-	gtk_widget_class_bind_template_child (widget_class, ByeByeWindow, label);
+	//gtk_widget_class_bind_template_child (widget_class, ByeByeWindow, label);
         gtk_widget_class_bind_template_child (widget_class, ByeByeWindow, cancel_button);
         gtk_widget_class_bind_template_child (widget_class, ByeByeWindow, reboot_button);
         gtk_widget_class_bind_template_child (widget_class, ByeByeWindow, logout_button);
@@ -57,12 +98,20 @@ bye_bye_window_class_init (ByeByeWindowClass *klass)
         gtk_widget_class_bind_template_child (widget_class, ByeByeWindow, suspend_button);
         gtk_widget_class_bind_template_child (widget_class, ByeByeWindow, hibernate_button);
         gtk_widget_class_bind_template_child (widget_class, ByeByeWindow, lock_button);
-        gtk_widget_class_bind_template_child (widget_class, ByeByeWindow, grid);
 }
 
 static void
 bye_bye_window_init (ByeByeWindow *self)
 {
 	gtk_widget_init_template (GTK_WIDGET (self));
+
+        /* signals when buttons clicked */
+        g_signal_connect (self->cancel_button, "clicked", G_CALLBACK (bye_bye_window_cancel_clicked), self);
+        g_signal_connect (self->reboot_button, "clicked", G_CALLBACK (bye_bye_window_reboot_clicked), self);
+        g_signal_connect (self->logout_button, "clicked", G_CALLBACK (bye_bye_window_logout_clicked), self);
+        g_signal_connect (self->shutdown_button, "clicked", G_CALLBACK (bye_bye_window_shutdown_clicked), self);
+        g_signal_connect (self->suspend_button, "clicked", G_CALLBACK (bye_bye_window_suspend_clicked), self);
+        g_signal_connect (self->hibernate_button, "clicked", G_CALLBACK (bye_bye_window_hibernate_clicked), self);
+        g_signal_connect (self->lock_button, "clicked", G_CALLBACK (bye_bye_window_lock_clicked), self);
 
 }

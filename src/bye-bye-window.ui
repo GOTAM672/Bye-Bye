@@ -26,6 +26,8 @@
             <property name="row-spacing">10</property>
             <property name="column-homogeneous">true</property>
 
+            <!-- Labels....... -->
+
             <!-- Cancel Label -->
             <child>
               <object class="GtkLabel">
@@ -228,7 +230,7 @@
 
             <!-- Lock Button -->
             <child>
-              <object class="GtkButton" id="Lock_button">
+              <object class="GtkButton" id="lock_button">
                 <property name="label">Lock</property>
                 <property name="margin-top">33</property>
                 <property name="tooltip-text">Lock Button</property>
