@@ -30,7 +30,7 @@
             <child>
               <object class="GtkLabel">
                 <property name="use-markup">true</property>
-                <property name="label">Cancel</property>
+                <property name="label"><![CDATA[<b>Cancel</b>]]></property>
                 <layout>
                   <property name="column">0</property>
                   <property name="row">12</property>
@@ -42,7 +42,7 @@
             <child>
               <object class="GtkLabel">
                 <property name="use-markup">true</property>
-                <property name="label">Reboot</property>
+                <property name="label"><![CDATA[<b>Reboot</b>]]></property>
                 <layout>
                   <property name="column">1</property>
                   <property name="row">12</property>
@@ -54,7 +54,7 @@
             <child>
               <object class="GtkLabel">
                 <property name="use-markup">true</property>
-                <property name="label">Logout</property>
+                <property name="label"><![CDATA[<b>Logout</b>]]></property>
                 <layout>
                   <property name="column">2</property>
                   <property name="row">12</property>
@@ -66,7 +66,7 @@
             <child>
               <object class="GtkLabel">
                 <property name="use-markup">true</property>
-                <property name="label">Shutdown</property>
+                <property name="label"><![CDATA[<b>Shutdown</b>]]></property>
                 <layout>
                   <property name="column">3</property>
                   <property name="row">12</property>
@@ -78,7 +78,7 @@
             <child>
               <object class="GtkLabel">
                 <property name="use-markup">true</property>
-                <property name="label">Suspend</property>
+                <property name="label"><![CDATA[<b>Suspend</b>]]></property>
                 <layout>
                   <property name="column">4</property>
                   <property name="row">12</property>
@@ -90,7 +90,7 @@
             <child>
               <object class="GtkLabel">
                 <property name="use-markup">true</property>
-                <property name="label">Hibernate</property>
+                <property name="label"><![CDATA[<b>Hibernate</b>]]></property>
                 <layout>
                   <property name="column">5</property>
                   <property name="row">12</property>
@@ -102,7 +102,7 @@
             <child>
               <object class="GtkLabel">
                 <property name="use-markup">true</property>
-                <property name="label">Lock</property>
+                <property name="label"><![CDATA[<b>Lock</b>]]></property>
                 <layout>
                   <property name="column">6</property>
                   <property name="row">12</property>
