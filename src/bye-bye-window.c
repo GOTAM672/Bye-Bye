@@ -44,7 +44,15 @@ G_DEFINE_FINAL_TYPE (ByeByeWindow, bye_bye_window, ADW_TYPE_APPLICATION_WINDOW)
 static void
 bye_bye_window_cancel_clicked (ByeByeWindow *self)
 {
+  GtkNative *native;
+
+  /* Returns the nearest GtkNative ancestor of self widget. */
+  native = gtk_widget_get_native (GTK_WIDGET (self));
+
   g_print ("Cancel button clicked .");
+
+  gtk_window_destroy (GTK_WINDOW (native));
+
 }
 
 static void
