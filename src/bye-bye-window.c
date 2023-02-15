@@ -124,6 +124,26 @@ bye_bye_window_suspend_clicked (ByeByeWindow *self)
 static void
 bye_bye_window_hibernate_clicked (ByeByeWindow *self)
 {
+  gchar *standard_output = NULL;
+  GError *error = NULL;
+  gint exit_status;
+
+  gboolean success = g_spawn_command_line_sync("systemctl hibernate",
+                                               &standard_output,
+                                               NULL,
+                                               &exit_status,
+                                               &error);
+  if (success) {
+    g_print("Output: %s\n", standard_output);
+    g_print("Exit status: %d\n", exit_status);
+  } else {
+
+    g_print("Failed to execute command\n");
+    g_print("Error: %s\n", error->message);
+  }
+
+  g_free(standard_output);
+  g_free(error);
   g_print ("Hibernate button clicked .");
 }
 
