@@ -16,3 +16,16 @@ I ported [this](https://gitlab.com/dwt1/byebye) application from Gtk Haskell to 
 # Screenshot
 
 ![](./screenshot/App.png)
+
+# How to build 
+
+### Using GNOME Builder.
+
+ you can use [GNOME Builder](https://wiki.gnome.org/Apps/Builder) to builder project.
+ 
+ step1: Clone repo into gnome builder.
+ step2: Press Run button.
+
+### Using Meson
+
+
