@@ -122,7 +122,7 @@
                 <property name="tooltip-text">Cancel Button</property>
                 <child>
                   <object class="GtkImage">
-                    <property name="file">/home/gotamg/Bye-Bye/img/cancel.png</property>
+                    <property name="file">./img/cancel.png</property>
                   </object>
                 </child>
                 <layout>
@@ -146,7 +146,7 @@
                 -->
                 <child>
                   <object class="GtkImage">
-                    <property name="file">/home/gotamg/Bye-Bye/img/reboot.png</property>
+                    <property name="file">./img/reboot.png</property>
                   </object>
                 </child>
                 <layout>
@@ -165,7 +165,7 @@
                 <property name="tooltip-text">Logout Button</property>
                 <child>
                   <object class="GtkImage">
-                    <property name="file">/home/gotamg/Bye-Bye/img/logout.png</property>
+                    <property name="file">./img/logout.png</property>
                   </object>
                 </child>
                 <layout>
@@ -184,7 +184,7 @@
                 <property name="tooltip-text">Shutdown Button</property>
                 <child>
                   <object class="GtkImage">
-                    <property name="file">/home/gotamg/Bye-Bye/img/shutdown.png</property>
+                    <property name="file">./img/shutdown.png</property>
                   </object>
                 </child>
                 <layout>
@@ -203,7 +203,7 @@
                 <property name="tooltip-text">Suspend Button</property>
                 <child>
                   <object class="GtkImage">
-                    <property name="file">/home/gotamg/Bye-Bye/img/suspend.png</property>
+                    <property name="file">./img/suspend.png</property>
                   </object>
                 </child>
                 <layout>
@@ -222,7 +222,7 @@
                 <property name="tooltip-text">Hibernate Button</property>
                 <child>
                   <object class="GtkImage">
-                    <property name="file">/home/gotamg/Bye-Bye/img/hibernate.png</property>
+                    <property name="file">./img/hibernate.png</property>
                   </object>
                 </child>
                 <layout>
@@ -241,7 +241,7 @@
                 <property name="tooltip-text">Lock Button</property>
                 <child>
                   <object class="GtkImage">
-                    <property name="file">/home/gotamg/Bye-Bye/img/lock.png</property>
+                    <property name="file">./img/lock.png</property>
                   </object>
                 </child>
                 <layout>
@@ -273,4 +273,5 @@
     </section>
   </menu>
 </interface>
+
 
