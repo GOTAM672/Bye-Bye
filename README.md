@@ -12,3 +12,7 @@ I ported [this](https://gitlab.com/dwt1/byebye) application from Gtk Haskell to 
 3. Basics of Meson and Flatpak
 4. How to write GUi using xml
 5. How to port
+
+# Screenshot
+
+![](./screenshot/App.png)
