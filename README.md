@@ -41,6 +41,8 @@ sudo meson install
 ### Install using Meson into /usr/local path permanently
 
 ```bash
+git clone https://github.com/GOTAM672/Bye-Bye.git
+cd Bye-Bye
 mkdir build
 cd build
 meson .. --buildtype=release --prefix=/usr/local -Dc_args=-O2 -Dcpp_args=-O2
