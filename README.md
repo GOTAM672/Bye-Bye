@@ -17,7 +17,7 @@ I ported [this](https://gitlab.com/dwt1/byebye) application from Gtk Haskell to 
 
 ![](./screenshot/App.png)
 
-# How to build 
+# How to build and Install application
 
 ### Using GNOME Builder.
 
@@ -34,4 +34,18 @@ cd Bye-Bye
 meson setup builddir
 meson compile
 sudo meson install
+# To run application
+./bye-bye
+```
+
+### Install using Meson into /usr/local path permanently
+
+```bash
+mkdir build
+cd build
+meson .. --buildtype=release --prefix=/usr/local -Dc_args=-O2 -Dcpp_args=-O2
+ninja
+sudo ninja install
+# To run application 
+bye-bye
 ```
